@@ -15,7 +15,7 @@ def redirect_to_profile():
     return  redirect(url_for('profile'))
 
 
-app.route('/profile_render')
+@app.route('/profile_render')
 def profile_render():
     name="Natalie Dubotolkova"
     return render_template('profile_render.html',name=name)
